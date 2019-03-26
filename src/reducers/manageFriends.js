@@ -2,7 +2,7 @@ export function manageFriends(state, action){
   if (action.type === 'REMOVE_FRIEND') {
     let index = state.friends.findIndex(x => x.id === action.id)
     let newArr = [...state.friends]
-
+    let spliced = newArr.splice(index, 1)
     return index
   }
   if (action.type === 'ADD_FRIEND') {
