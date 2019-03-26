@@ -4,7 +4,7 @@ export function manageFriends(state, action){
     let newArr = [...state.friends]
     let spliced = newArr.splice(index, 1)
     spliced
-    return newArr
+    return {newArr}
   }
   if (action.type === 'ADD_FRIEND') {
     return {
