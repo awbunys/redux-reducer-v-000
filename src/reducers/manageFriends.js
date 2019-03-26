@@ -5,7 +5,7 @@ export function manageFriends(state, action){
     (function () {
     newArr.splice(index, 1)
 })();
-    return newArr
+    return index
   }
   if (action.type === 'ADD_FRIEND') {
     return {
